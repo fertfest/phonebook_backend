@@ -129,8 +129,8 @@ app.post('api/persons')
 
 
 
-const PORT = 3001
-const server = app.listen(process.env.PORT || PORT, () => {
+const PORT = process.env.PORT || 3001
+const server = app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`);
 })
 
